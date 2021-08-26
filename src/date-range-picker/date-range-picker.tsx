@@ -37,7 +37,7 @@ export function DateRangePicker({
 	onChange,
 	dateStart = new Date(),
 	dateFinish,
-	monthCount = 2,
+	monthCount = 4,
 }: DateRangePickerProps) {
 	const initialDates: DateState = [
 		new Date(
@@ -244,6 +244,11 @@ export function DateRangePicker({
 						</div>
 
 						<div className="drp-controls">
+							<div className="drp-controls-dates">
+								{dates[0]?.toLocaleDateString()}
+								{dates[0] && dates[1] && "-"}
+								{dates[1]?.toLocaleDateString()}
+							</div>
 							<button
 								className="drp-btn"
 								onClick={() => {

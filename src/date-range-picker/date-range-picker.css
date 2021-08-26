@@ -53,28 +53,20 @@
 	font-size: 0.8rem;
 }
 
-.drp-controls {
-	margin: 0 0.5rem 0.5rem;
-	display: flex;
-	justify-content: flex-end;
-}
-
 .drp-month-label {
 	text-align: center;
 	font-weight: bolder;
 	font-size: 1rem;
 	display: block;
-
 	flex: auto;
 	text-transform: capitalize;
-	font-size: 1rem;
 }
 
 .drp-month-control {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 0.8rem;
 	align-items: baseline;
+	margin-bottom: 0.8rem;
 }
 
 /* Cell */
@@ -148,8 +140,23 @@
 .drp-arrow-container {
 	cursor: pointer;
 	box-sizing: border-box;
-	padding: 0.3rem;
+	padding: 0.3rem 0.5rem;
+	display: flex;
 }
 .drp-arrow-container:hover {
 	background-color: #ececec;
+}
+
+/* Bottom controls */
+
+.drp-controls-dates {
+	font-size: 1rem;
+	margin: 0 1rem;
+}
+
+.drp-controls {
+	margin: 0 0.5rem 0.5rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
